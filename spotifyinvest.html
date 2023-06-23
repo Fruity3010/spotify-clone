@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+    <title>Document</title>
+    <style>
+        .logo {
+            width: 100px;
+            margin-right: 20%;
+            margin-left: 3%;
+        }
+
+        .icon {
+            font-size: 20px;
+            color: rgb(255, 255, 255);
+            margin-left: 2%;
+        }
+
+        .sap {
+            font-size: 17px;
+            font-weight: 500;
+            color: white;
+
+        }
+
+        .dim {
+            background-color: rgb(255, 255, 255);
+            position: sticky;
+            top: 0;
+            bottom: 0;
+            height: 70px;
+            width: 100%;
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.242);
+            z-index: 2;
+
+        }
+
+        .gre:hover {
+            text-decoration: underline;
+        }
+
+        .gre {
+            font-weight: 700;
+        }
+
+        .sid {
+            height: 86%;
+
+        }
+
+        .con {
+            background-image: linear-gradient(rgb(49, 81, 168), rgb(74, 143, 128));
+            width: 100%;
+        }
+
+        .dip {
+            margin-left: 5%;
+        }
+
+        .hig {
+            font-size: 100px;
+            color: white;
+        }
+
+        .words {
+            color: white;
+        }
+
+        .hed {
+            font-size: 25px;
+            color: white;
+            font-weight: 700;
+            font-family: sans-serif;
+            margin-left: 2%;
+            margin-right: 60%;
+        }
+
+        .line {
+            border: 1.3px solid white;
+        }
+
+        .view {
+            color: white;
+        }
+
+        .view:hover {
+            text-decoration: underline;
+        }
+
+        .share {
+            font-size: 50px;
+            font-weight: 700;
+            font-family: sans-serif;
+            color: white;
+        }
+
+        .sub {
+            border-top: 1px solid white;
+            border-right: 1px solid white;
+            width: 300px;
+            padding-left: 1.1%;
+            padding-top: 2%;
+
+        }
+
+        .dam {
+            width: 100%;
+            margin-left: 5px;
+        }
+
+        .tap {
+            margin-top: 10px;
+            margin-left: 50px;
+            ;
+            width: 150px;
+            border-radius: 30px;
+            background-color: transparent;
+            border: solid 1px white;
+            font-size: 14px;
+            padding: 10px;
+        }
+
+        .tap:hover {
+            background-color: rgb(255, 255, 255);
+            color: black;
+        }
+
+        .news {
+            font-size: 120px;
+            margin-bottom: 10px;
+            font-weight: 700;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        .late {
+            margin-left: 5%;
+            margin-top: 5%;
+            margin-bottom: 10%;
+
+        }
+
+        .ico {
+            font-size: 30px;
+        }
+
+        .upp {
+            font-weight: 700;
+        }
+
+        .record {
+            font-size: 14.4px;
+            font-weight: 700px;
+            font-family: Arial;
+        }
+
+        .rest {
+            font-size: 14.4px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 400;
+            color: rgb(219, 207, 253);
+        }
+
+        .views {
+            font-size: 14.4px;
+            font-weight: 700;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .cam {
+            margin-top: 20px;
+            margin-left: 10px;
+
+        }
+
+        .gate {
+            background-image: linear-gradient(rgb(255, 255, 255), rgb(67, 2, 245));
+            width: 99%;
+        }
+
+        .timmy {
+            width: 250px;
+            margin-left: 10px;
+            height: 180px;
+            margin-bottom: 10px;
+        }
+
+        .lid {
+            padding-left: 10px;
+            padding-right: 0px;
+            background-color: white;
+            margin-right: 20px;
+            margin-bottom: 20px;
+            width: 150px;
+            justify-content: center;
+
+        }
+
+        .him {
+            font-size: 14px;
+            color: rgb(83, 0, 245);
+            margin-bottom: 20px;
+            font-weight: 700;
+            margin-left: 10px;
+        }
+
+        .her {
+            font-size: 20px;
+            font-weight: 700;
+            font-family: sans-serif;
+            margin-bottom: 130px;
+            margin-left: 10px;
+        }
+
+        .she {
+            color: rgb(108, 108, 108);
+            font-weight: 400;
+            font-family: sans-serif;
+            margin-left: 10px;
+        }
+
+        .load {
+            width: 150px;
+            border-radius: 30px;
+            padding: 5px;
+        }
+
+        .load:hover {
+            background-color: white;
+            color: black;
+        }
+
+        .more {
+            margin-top: 50px;
+            margin-left: 55%;
+            width: 200px;
+            margin-bottom: 200px;
+        }
+
+        .host {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .dime {
+            background-color: white;
+            box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.589);
+            padding-left: 30px;
+            padding-top: 20px;
+            padding-bottom: 10px;
+            width: 800px;
+            margin-left: 400px;
+            margin-bottom: 10px;
+        }
+
+        .nam {
+            background-image: linear-gradient(white, rgb(76, 146, 126));
+            padding-bottom: 130px;
+        }
+
+        .below {
+            position: absolute;
+            z-index: 1;
+            margin-bottom: 50px;
+            top: 4320px;
+        }
+
+        .geer {
+            position: relarive;
+            margin-left: 20px;
+        }
+
+        .discover {
+            width: 400px;
+            margin-top: 100px;
+            margin-left: 20px;
+            font-weight: 400;
+            font-size: 14px;
+            margin-bottom: 50px;
+            font-family: sans-serif;
+        }
+
+        .all {
+            margin-left: 20px;
+
+        }
+
+        .build {
+            font-size: 50px;
+            font-weight: 700;
+            font-family: sans-serif;
+        }
+
+        .demand {
+            font-size: 18px;
+            font-weight: 400;
+            font-family: sans-serif;
+        }
+
+        .peep {
+            width: 450px;
+            margin-left: 60%;
+        }
+
+        .them {
+            background-image: linear-gradient(white, rgb(45, 70, 185));
+        }
+
+        .dave {
+            width: 250px;
+            height: 180px;
+        }
+
+        .bum {
+            background-color: white;
+            padding-top: 20px;
+            padding-left: 20px;
+            padding-right: 5px;
+            margin-bottom: 10px;
+            margin-right: 30px;
+            margin-bottom: 250px;
+        }
+
+        .herr {
+            font-size: 20px;
+            font-weight: 700;
+            font-family: sans-serif;
+            margin-bottom: 30px;
+            margin-left: 10px;
+        }
+
+        .bim {
+            width: 100%;
+            margin-top: 30px;
+        }
+
+        .biggie {
+            border: solid 1px white;
+            width: 600px;
+            height: 400px;
+            margin-left: 50px;
+        }
+
+        .smallie {
+            border: 1px solid white;
+            width: 55 0px;
+            height: 300px;
+            margin-top: 100px;
+            bottom: 0;
+            padding: 60px;
+        }
+
+        .flexer {
+            display: flex;
+        }
+
+        .shee {
+            margin-top: 100px;
+            font-size: 20px;
+            font-weight: 700;
+            font-family: sans-serif;
+            margin-bottom: 130px;
+            color: rgb(255, 255, 255);
+            margin-left: 10px;
+            position: absolute;
+        }
+
+        .mail {
+            margin-top: 110px;
+            margin-bottom: 10px;
+            width: 400px;
+            height: 60px;
+            border: 2px solid white;
+            color: white;
+            background-color: transparent;
+        }
+        .mail:focus-within{
+            outline: 3px dotted white;
+        }
+
+        .hey {
+            width: 450px;
+            margin-left: 30px;
+            margin-top: 10px;
+        }
+
+        input[type=checkbox] {
+            height: 15px;
+            width: 20px;
+        }
+        .amin{
+            color: white;
+            margin-right: 50px;
+
+        }
+        ::placeholder{
+            color: white;
+        }
+        .buttoo{
+            width: 150px;
+            background-color: white;
+            height: 50px;
+            border-radius: 30px;
+            color: blueviolet;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 17px;
+        }
+        .buttoo:hover{
+            background-color: black;
+            transition: all 1s;
+            color: white;
+        }
+        .lastt{
+            width: 400px;
+        }
+        .boldd{
+            color: white;
+        }
+        .spot{
+            width: 130px;
+        }
+        .black{
+            padding: 80px;
+        }
+        .hit{
+            margin-top: 10px;
+            margin-left: 60px;
+        }
+        .shesh{
+            font-size: 11px;
+            color: rgb(108, 108, 108);
+            font-weight: 700;
+            font-family: sans-serif;
+            margin-left: 10px;
+        }
+        .about{
+            font-weight: 700;
+            font-family: sans-serif;  
+            margin-left: 10px;
+            color: white;
+            font-size: 16px;
+        }
+        .about:hover{
+color: rgb(30, 215, 96);
+        }
+        .black{
+            background-color: black;
+        }
+        .gra{
+            font-size: 40px;
+        }
+        .gra:hover{
+            color: rgb(30, 215, 96);
+        }
+        .muffin{
+            border-radius: 100%;
+            margin-right: 10px;
+        }
+        .muffinmar{
+            border-radius: 100%;
+            margin-right: 10px;
+            margin-left: 400px;
+        }
+        .butto{
+            width: 180px;
+            background-color: rgb(30, 215, 96);
+            height: 50px;
+            border-radius: 30px;
+          color: black;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            font-weight: 700;
+            position: absolute;
+            margin-top: 50px;
+            margin-left: 940px;
+        }
+        .butto:hover{
+            background-color: rgb(255, 255, 255);
+          
+        }
+        .cup{
+            background-color: white;
+            padding: 10px;
+            position: absolute;
+            margin-top: 10px;
+             box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.548);
+             visibility: hidden;
+        }
+        .tan{
+            font-size: 16px;
+            font-weight: 700;
+            font-family: sans-serif;
+          
+           
+        }
+        .one:hover+.cup{
+visibility: visible;
+        }
+        .tan:hover{
+color: blueviolet;
+        }
+        @media (max-width: 767px){
+       body{
+        width: fit-content;
+       }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="dim">
+        <nav class="navbar navbar-expand-lg dim">
+            <div class="container-fluid">
+                <img class="logo " src="https://www.iconsdb.com/icons/preview/blue/spotify-2-xxl.png" alt="">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active text-dark me-4 " aria-current="page" href="#">
+                                <div>
+                                <h6 class="gre one">Financials</h6>
+                                <div class="cup">
+                                    <p class="tan"> Quarerly Results</p>
+                                    <p class="tan"> Annual Results</p>
+                                    <p class="tan"> SEC fillings</p>
+                                </div>
+                            </div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark me-4 " href="#">
+                                <div>
+                                <h6 class="gre">Governance</h6>
+                            <div>
+
+                            </div>
+                            </div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark me-4 " href="#">
+                                <h6 class="gre">About</h6>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark me-4 " href="#">
+                                <h6 class="gre">Podcasts</h6>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-dark me-4 " aria-current="page" href="#">
+                                <h6 class="gre">News</h6>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark me-4 " href="#">
+                                <h6 class="gre">Events</h6>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark me-4 " href="#">
+                                <h6 class="gre">Resources</h6>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark me-4 " href="#">
+                                <h6><i class="fa-solid fa-magnifying-glass"></i></h6>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <section class="row py-5 con ">
+        <div class="col-md p-4 dip">
+            <img class="w-100 sid" src="https://s29.q4cdn.com/175625835/files/images/home-banner-image-2.jpeg" alt="">
+        </div>
+        <div class="col-md p-4">
+            <h1 class="hig">Spotify <br>Investors</h1>
+            <h4 class="words">Our mission is to unlock the potential of human creativity—by giving a million creative
+                artists the opportunity
+                to live off their art and billions of fans the opportunity to enjoy and be inspired by it.</h4>
+        </div>
+        <hr class="line">
+        <div class="py-3"> <span class="hed"> Q3 2022 Earnings Report</span> <span class="view">VIEW ALL</span></div>
+
+        <div class="row  dam ">
+            <div class="col-md sub"><span class="share">Shareholder Deck</span> <br> <button
+                    class="btn btn-success tap">VIEW</button></div>
+            <div class="col-md sub"><span class="share">Financial Statements</span><br> <button
+                    class="btn btn-success tap">VIEW</button></div>
+            <div class="col-md sub"><span class="share">Earnings Webcast</span><br> <button
+                    class="btn btn-success tap">VIEW</button></div>
+            <div class="col-md sub"><span class="share">Prepared Remarks</span><br> <button
+                    class="btn btn-success tap">VIEW</button></div>
+        </div>
+    </section>
+
+    <section class="gate ">
+        <div class="late">
+            <h2 class="news">News</h2>
+            <p class="upp">Spotify's latest updates, from partnerships to <br> products to podcasts.</p>
+            <i class="fa-solid fa-ellipsis-vertical ico"></i><i class="fa-solid fa-ellipsis-vertical ico"></i><i
+                class="fa-solid fa-ellipsis-vertical ico me-4"></i><i class="fa-solid fa-braille ico"></i>
+        </div>
+        <section class="row px-2">
+            <div class="col cam">
+                <p class="views">VIEW ALL</p>
+                <p class="record">FOR THE RECORD</p>
+                <p class="rest">FOR ARTISTS</p>
+                <p class="rest">FOR PODCASTS</p>
+                <p class="rest">FOR ADVERTISERS</p>
+                <p class="rest">LIFE IN Spotify</p>
+            </div>
+            <div class="col-md py-3 lid">
+                <img class="timmy"
+                    src="https://storage.googleapis.com/pr-newsroom-wp/1/2023/01/GLOW_FTR-Header-scaled.jpg" alt="">
+                <p class="him">FOR THE RECORD</p>
+                <p class="her">Spotify Debuts GLOW, an Equity Program for <br> LGBTQIA+ Creators</p>
+                <p class="she">January 23, 2023</p>
+
+            </div>
+            <div class="col-md py-3 lid">
+                <img class="timmy"
+                    src="https://storage.googleapis.com/pr-newsroom-wp/1/2023/01/Spotify_Logo_RGB_White-1.png" alt="">
+                <p class="him">FOR THE RECORD</p>
+                <p class="her">An Update on January 2023 <br> Organizational <br> Changes</p>
+                <p class="she">January 23, 2023</p>
+
+            </div>
+            <div class="col-md py-3 lid">
+                <img class="timmy"
+                    src="https://storage.googleapis.com/pr-newsroom-wp/1/2023/01/le-van-header-scaled.jpg" alt="">
+                <p class="him">FOR THE RECORD</p>
+                <p class="her">Gaming and Hip-Hop Go <br> Head-to-Head at a Spotify <br> Event in France</p>
+                <p class="she">January 23, 2023</p>
+
+            </div>
+        </section>
+        <section class="row px-2">
+            <div class="col cam">
+
+            </div>
+            <div class="col-md py-3 lid">
+                <img class="timmy"
+                    src="https://storage.googleapis.com/pr-newsroom-wp/1/2023/01/GLOW_FTR-Header-scaled.jpg" alt="">
+                <p class="him">FOR THE RECORD</p>
+                <p class="her">Spotify Debuts GLOW, an Equity Program for <br> LGBTQIA+ Creators</p>
+                <p class="she">January 23, 2023</p>
+
+            </div>
+            <div class="col-md py-3 lid">
+                <img class="timmy"
+                    src="https://storage.googleapis.com/pr-newsroom-wp/1/2023/01/Spotify_Logo_RGB_White-1.png" alt="">
+                <p class="him">FOR THE RECORD</p>
+                <p class="her">An Update on January 2023 <br> Organizational <br> Changes</p>
+                <p class="she">January 23, 2023</p>
+
+            </div>
+            <div class="col-md py-3 lid">
+                <img class="timmy"
+                    src="https://storage.googleapis.com/pr-newsroom-wp/1/2023/01/le-van-header-scaled.jpg" alt="">
+                <p class="him">FOR THE RECORD</p>
+                <p class="her">Gaming and Hip-Hop Go <br> Head-to-Head at a Spotify <br> Event in France</p>
+                <p class="she">January 23, 2023</p>
+
+            </div>
+            <div class="more">
+                <button class="btn btn-dark load"> Load More</button>
+            </div>
+        </section>
+    </section>
+    <section class="nam">
+        <div class="late">
+            <h2 class="news">Press <br> Releases</h2>
+            <p class="upp">Spotify's latest updates, from partnerships to <br> products to podcasts.</p>
+            <i class="fa-solid fa-ellipsis-vertical ico"></i><i class="fa-solid fa-ellipsis-vertical ico"></i><i
+                class="fa-solid fa-ellipsis-vertical ico me-4"></i><i class="fa-solid fa-braille ico"></i>
+        </div>
+        <div class="dime">
+            <p class="host">Spotify to Host “Stream On” Event on March 8, 2023</p>
+            <p class="she">January 23, 2023</p>
+        </div>
+        <div class="dime">
+            <p class="host">Spotify to Host “Stream On” Event on March 8, 2023</p>
+            <p class="she">January 23, 2023</p>
+        </div>
+        <div class="dime">
+            <p class="host">Spotify to Host “Stream On” Event on March 8, 2023</p>
+            <p class="she">January 23, 2023</p>
+        </div>
+        <div class="dime">
+            <p class="host">Spotify to Host “Stream On” Event on March 8, 2023</p>
+            <p class="she">January 23, 2023</p>
+        </div>
+        <div class="dime">
+            <p class="host">Spotify to Host “Stream On” Event on March 8, 2023</p>
+            <p class="she">January 23, 2023</p>
+        </div>
+        <div class="dime">
+            <p class="host">Spotify to Host “Stream On” Event on March 8, 2023</p>
+            <p class="she">January 23, 2023</p>
+        </div>
+    </section>
+    <section class="them">
+        <div class="geer">
+            <div>
+                <span class="news">About</span>
+            </div>
+            <div class="below"><span class="news">Spotify</span></div>
+        </div>
+        <div class="discover">
+            <p>Discover, manage, and share over 80 million tracks, including more than 4 million podcast titles, and ,
+                for
+                free, or
+                upgrade to Spotify Premium to access exclusive features for music
+                including improved sound quality and an on-demand, offline, and ad-free listening experience.</p>
+        </div>
+        <p class="all">VIEW ALL</p>
+        <div class="peep">
+            <h3 class="build">Building the World’s #1 <br> Audio Network</h3>
+            <p class="demand">Spotify transformed music listening forever when we launched in 2008, moving the
+                music industry from a "transaction-based" experience of buying
+                and owning audio content to an "access-based" model allowing users to stream on demand.</p>
+        </div>
+        <div class="row px-2  bim">
+            <div class="col-md ">
+
+            </div>
+            <div class="col-md bum">
+                <img class="dave" src="https://s29.q4cdn.com/175625835/files/images/Original-and-Exclusives.jpg" alt="">
+                <p class="him">FEATURED SITE</p>
+                <p class="herr">Spotify Originals & Exclusives</p>
+            </div>
+            <div class="col-md bum">
+                <img class="dave" src="https://s29.q4cdn.com/175625835/files/images/joe-rogan.jpeg" alt="">
+                <p class="him">FEATURED SITE</p>
+                <p class="herr">The Joe Rogan Podcast</p>
+            </div>
+            <div class="col-md bum">
+                <img class="dave" src="https://s29.q4cdn.com/175625835/files/images/rap-caviar.jpeg" alt="">
+                <p class="him">FEATURED SITE</p>
+                <p class="herr">RapCaviar</p>
+            </div>
+        </div>
+        <div class="peep">
+            <h3 class="build">Our Platform and User Experience</h3>
+            <p class="demand">Innovation is at the core of what we do, and we continually work to
+                deliver the best audio experience to listeners. Spotify is more than an audio streaming service
+                - we are in the discovery business. We help make it easier to discover
+                new audio that listeners love through personalized discovery at scale, around the world.</p>
+        </div>
+        <div class="row px-2  bim">
+            <div class="col-md ">
+
+            </div>
+            <div class="col-md ">
+
+            </div>
+            <div class="col-md bum">
+                <img class="dave" src="https://s29.q4cdn.com/175625835/files/images/research-design-engineering.jpeg"
+                    alt="">
+                <p class="him">SPOTIFY R&D</p>
+                <p class="herr">Engineering</p>
+            </div>
+            <div class="col-md bum">
+                <img class="dave" src="https://s29.q4cdn.com/175625835/files/images/product-story.jpeg" alt="">
+                <p class="him">FEATURED AUDIO</p>
+                <p class="herr">Spotify: A Product Story</p>
+            </div>
+        </div>
+        <div class="peep">
+            <h3 class="build">Connecting Creators with Their Fans</h3>
+            <p class="demand">Helping artists and creators get discovered, grow their audience,
+                and create the content that fuels their ambitions, is the foundation of what we do.</p>
+        </div>
+        <div class="row px-2  bim">
+            <div class="col-md ">
+
+            </div>
+            <div class="col-md bum">
+                <img class="dave" src="https://s29.q4cdn.com/175625835/files/images/S4A.jpeg" alt="">
+                <p class="him">FEATURED SITE</p>
+                <p class="herr">Spotify Originals & Exclusives</p>
+            </div>
+            <div class="col-md bum">
+                <img class="dave" src="https://s29.q4cdn.com/175625835/files/images/s4p.png" alt="">
+                <p class="him">FEATURED SITE</p>
+                <p class="herr">The Joe Rogan Podcast</p>
+            </div>
+            <div class="col-md bum">
+                <img class="dave" src="https://s29.q4cdn.com/175625835/files/images/Noteable.jpeg" alt="">
+                <p class="him">FEATURED SITE</p>
+                <p class="herr">RapCaviar</p>
+            </div>
+        </div>
+        <div class="flexer">
+            <div class="biggie">
+                <div class="hey">
+                    <label class="shee" >Email Alerts</label> <br>
+                    <input class="mail" type="text" placeholder="Email Address">
+                    <div class="flexer">
+                        <input type="checkbox" name="" id="">
+                        <p class="amin">News</p>
+                        <input type="checkbox" name="" id="">
+                        <p class="amin">SEC fillings</p>
+                        <input type="checkbox" name="" id="">
+                        <p class="amin">Event</p>
+                    </div>
+                    <button class="buttoo btn">Submit</button>
+                </div>
+            </div>
+            <div class="smallie">
+                <div class="lastt">
+                <h4 class="boldd">Investor Contact</h4>
+            <h6 class="boldd">Questions for the Investor Relations
+                 department can be emailed to ir@spotify.com order
+                  submitted by clicking on the button below.</h6>
+                  <button class="buttoo btn">Contact Us</button>
+            </div>
+            </div>
+        </div>
+    </section>
+    <div class="black">
+        <div class=" flexer">
+            <div class=""><img class="spot" src="https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_RGB_White.png" alt=""></div>
+            <div class="hit"><p class="shesh">COMPANY</p>
+                <p class="about">About</p>
+                <a href="spotifyjobs.html"><p class="about">Jobs</p></a>
+            </div>
+            <div class="hit"><p class="shesh">COMMUNITIES</p>
+                <p class="about">For Artists</p>
+                <p class="about">Developers</p>
+                <p class="about">Investors</p>
+                <p class="about">Advertising</p>
+                <p class="about">Vendors</p>
+            </div>
+            <div class="hit"><p class="shesh">USEFUL LINKS</p>
+                <p class="about">Support</p>
+                <p class="about">Web</p>
+            </div>
+           <div class="muffinmar"><i class="fa-brands fa-square-instagram gra"></i></div>
+           <div class="muffin"><i class="fa-brands fa-square-facebook gra"></i></div>
+           <div class="muffin"><i class="fa-brands fa-square-twitter gra"></i></div>
+            <button class="butto">Get Spotify</button>
+        </div>
+       
+    </div>
+</body>
+
+</html>
+<script src="https://kit.fontawesome.com/4b478d8f1c.js" crossorigin="anonymous"></script>
+<script src="../bootstrap-5.3.0-alpha1-dist/js/bootstrap.bundle.js"></script>

@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+    <title>Document</title>
+    <style>
+        .sap {
+            font-size: 17px;
+            font-weight: 500;
+            color: white;
+
+        }
+
+        .logo {
+            width: 130px;
+            margin-right: 100px;
+            margin-left: 5%;
+        }
+
+        .dim {
+            background-color: rgb(220, 47, 40);
+            position: -webkit-sticky;
+            /* Safari */
+            position: sticky;
+            top: 0;
+        }
+
+        .gre {
+            margin-top: 10px;
+            font-size: 17px;
+            font-weight: 400;
+        }
+
+        .body {
+            background-color: rgb(220, 47, 40);
+            width: 100%;
+            height: 600px;
+        }
+
+        .image {
+            height: 450px;
+            width: 600px;
+            position: absolute;
+            margin-left: 500px;
+            z-index: 1;
+
+        }
+
+        .how {
+            margin-left: 120px;
+        }
+
+        .one {
+            width: 300px;
+            background-color: cornflowerblue;
+            padding: 30px;
+            margin-left: 400px;
+            border-radius: 30px;
+            margin-bottom: 20px;
+        }
+
+        .run {
+            color: rgb(0, 0, 0);
+            font-size: 25.0476px;
+        }
+
+        .NEW {
+            font-size:
+                15.5238px;
+            color: rgb(25, 20, 20, 0.4);
+        }
+
+        .two {
+
+            width: 400px;
+            background-color: rgb(255, 205, 210);
+            padding: 20px;
+
+            border-radius: 30px;
+
+        }
+
+        .marqueee {
+            margin-left: 400px;
+            position: absolute;
+            z-index: 2;
+        }
+
+        .join {
+            background-color: transparent;
+            font-size: 25.0476px;
+            font-weight: 300;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+        }
+
+        .mab {
+            width: 600px;
+            background-color: transparent;
+            z-index: 2;
+            position: absolute;
+            margin-left: 60px;
+            margin-top: 30px;
+        }
+
+        .band {
+            font-size: 85px;
+            color: white;
+            font-weight: 500;
+        }
+
+        .dark {
+            background-color: black;
+            color: white;
+            border: 1px;
+            padding: 20px;
+            border-radius: 30px;
+            border: 1px solid black;
+            font-size: 17px;
+            font-weight: 400;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .dark:hover {
+            border: 1px solid black;
+            color: black;
+        }
+        .darkk {
+            background-color: black;
+            color: white;
+            border: 1px;
+            padding: 20px;
+            border-radius: 30px;
+            border: 1px solid rgb(255, 255, 255);
+            font-size: 17px;
+            font-weight: 400;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-right: 10px;
+        }
+
+        ::placeholder {
+            font-size: 25.0476px;
+            color: white;
+
+        }
+        .play {
+            font-size: 25.0476px;
+            color: rgb(0, 0, 0);
+            margin-right: 600px;
+
+        }
+
+
+        .tip {
+            height: 80px;
+            outline: 0;
+            width: 1000px;
+            border: 0;
+            background-color: transparent;
+        }
+
+        .icon {
+            font-size: 50px;
+            color: white;
+            margin-left: 10px;
+        }
+        .iconn {
+            font-size: 50px;
+            color: rgb(0, 0, 0);
+            margin-left: 10px;
+        }
+
+        .kim {
+            background-color: rgb(255, 70, 50);
+            position: absolute;
+            width: 1150px;
+            margin-top: 350px;
+            z-index: 2;
+            padding: 10px;
+            margin-left: 50px;
+            border-radius: 40px;
+        }
+        .kimm {
+            background-color: rgb(255, 255, 255);
+            position: absolute;
+            width: 1150px;
+            margin-top: 160px;
+            height: 100px;
+            z-index: 2;
+            padding: 10px;
+            margin-left: 50px;
+            border-radius: 40px;
+            border: 1px solid rgb(168, 168, 168);
+            padding-left: 20px;
+            padding-top: 30px ;
+        }
+        .kimm:hover{
+            border: 1px solid rgb(0, 0, 0);
+        }
+        .kimmm {
+            background-color: rgb(255, 255, 255);
+            position: absolute;
+            width: 1150px;
+            margin-top: 270px;
+            height: 100px;
+            z-index: 2;
+            padding: 10px;
+            margin-left: 50px;
+            border-radius: 40px;
+            border: 1px solid rgb(168, 168, 168);
+            padding-left: 20px;
+            padding-top: 30px ;
+        }
+        .kimmm:hover{
+            border: 1px solid rgb(0, 0, 0);
+        }
+        .kimmmm {
+            background-color: rgb(255, 255, 255);
+            position: absolute;
+            width: 1150px;
+            margin-top: 380px;
+            height: 100px;
+            z-index: 2;
+            padding: 10px;
+            margin-left: 50px;
+            border-radius: 40px;
+            border: 1px solid rgb(168, 168, 168);
+            padding-left: 20px;
+            padding-top: 30px ;
+        }
+        .kimmmm:hover{
+            border: 1px solid rgb(0, 0, 0);
+        }
+        .can {
+            background-color: white;
+            border-top-left-radius: 50px;
+            border-top-right-radius: 50px;
+            width: 100%;
+            padding: 30px;
+            position: absolute;
+            z-index: 2;
+            top: 550px;
+        }
+
+        .ima {
+            margin-left: 80px;
+        }
+
+        .text {
+            width: 400px;
+        }
+
+        .sit {
+            height: 400px;
+            width: 400px;
+            border-radius: 30px;
+        }
+
+        .number {
+            width: 60px;
+            border: 1px solid black;
+            border-radius: 80%;
+            padding-left: 20px;
+            margin-right: 10px;
+        }
+
+        .onee {
+            font-size:
+                50.381px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 400;
+            color: black;
+        }
+
+        .rim {
+            font-size:
+                25.0476px;
+
+        }
+
+        .cann {
+            background-color: white;
+            border-top-left-radius: 50px;
+            border-top-right-radius: 50px;
+            width: 100%;
+            padding: 30px;
+            position: absolute;
+            z-index: 2;
+            top: 1100px;
+            border-top: 1px solid black;
+        }
+
+        .flexer {
+            display: flex;
+        }
+
+        .cannn {
+            background-color: white;
+            border-top-left-radius: 50px;
+            border-top-right-radius: 50px;
+            width: 100%;
+            padding: 30px;
+            position: absolute;
+            z-index: 2;
+            top: 1650px;
+            border-top: 1px solid black;
+        }
+
+        .slide1 {
+            width: 400px;
+            background-color: rgb(195, 240, 200);
+            height: 500px;
+            margin-left: 150px;
+            border-radius: 30px;
+
+
+        }
+        .slide2 {
+            width: 400px;
+            background-color: rgb(0, 100, 80);
+            height: 500px;
+            margin-left: 150px;
+            border-radius: 30px;
+
+
+        }
+
+        .caro {
+
+            margin-left: 300px;
+            width: 700px;
+
+        }
+
+        .mar {
+            background-color: black;
+            height: 50px;
+            border-radius: 30px;
+            margin-top: 200px;
+        }
+
+        .pet {
+            background-image: linear-gradient(rgb(45, 70, 185), rgb(45, 48, 204));
+            padding-top: 100px;
+            margin-top: 1530px;
+        }
+        .pett {
+            background-image: linear-gradient(rgb(253, 203, 208),rgb(253, 203, 208) );
+            padding-top: 100px;
+            margin-top: 130px;
+        }
+
+        .move {
+            margin-left: 520px;
+            color: white;
+            margin-top: 50px;
+            margin-bottom: 20px;
+        }
+        .movee {
+            margin-left: 520px;
+            color: rgb(0, 0, 0);
+            margin-top: 50px;
+            margin-bottom: 20px;
+        }
+
+
+        .tep {
+            margin-left: 170px;
+            margin-bottom: 70px;
+            font-size: 17px;
+        }
+
+        .tea {
+            font-size: 35px;
+            color: black;
+            margin-left: 20px;
+            margin-right: 20px;
+            margin-bottom: 200px;
+
+        }
+
+        .he1 {
+            font-size: 50px;
+            font-weight: 600px;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-left: 40px;
+            margin-bottom: 50px;
+        }
+
+        .he2 {
+            font-size: 25px;
+            font-weight: 300;
+        }
+        .he3 {
+            font-size: 50px;
+            font-weight: 600px;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-left: 130px;
+            margin-bottom: 50px;
+            color: white;
+        }
+
+        .he4 {
+            font-size: 25px;
+            font-weight: 300;
+            color: white;
+        }
+
+        .can5 {
+            width: 650px;
+            margin-left: 330px;
+            margin-top: 200px;
+            margin-bottom: 100px;
+        }
+        .deep{
+            background-color: black;
+            padding-bottom: 50px;
+        }
+        .can6 {
+            width: 650px;
+            margin-left: 330px;
+            margin-top: 500px;
+            margin-bottom: 100px;
+            padding-top: 100px;
+            background-color: black;
+        }
+
+        .jay {
+            padding-left: 200px;
+        }
+        .jayy {
+            padding-left: 100px;
+        }
+
+        .jam {
+            position: -webkit-sticky;
+            /* Safari */
+            position: sticky;
+            top: 0;
+            z-index: 4;
+        }
+
+        .jop {
+            width: 100px;
+            height: 100px;
+            border-radius: 30px;
+
+        }
+
+        .coun {
+            font-size: 85px;
+            font-weight: 400;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .tam {
+            width: 50%;
+left: 0;
+        }
+        .jap{
+            margin-left: 230px;
+        }
+        .black{
+    background-color: black;
+    padding-top:100px ;
+}
+.gra{
+    font-size: 40px;
+}
+.gra:hover{
+    color: rgb(30, 215, 96);
+}
+.muffin{
+    border-radius: 100%;
+    margin-right: 10px;
+}
+.muffinmar{
+    border-radius: 100%;
+    margin-right: 10px;
+    margin-left: 400px;
+}
+.butto{
+    width: 180px;
+    background-color: rgb(30, 215, 96);
+    height: 50px;
+    border-radius: 30px;
+  color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 970px;
+}
+.butto:hover{
+    background-color: rgb(255, 255, 255);
+  
+}
+.about{
+    font-weight: 700;
+    font-family: sans-serif;  
+    margin-left: 10px;
+    color: white;
+    font-size: 16px;
+}
+.about:hover{
+color: rgb(30, 215, 96);}
+.spot{
+    width: 130px;
+    margin-left: 30px;
+}
+.hit{
+    margin-top: 10px;
+    margin-left: 60px;
+}
+.shesh{
+    font-size: 11px;
+    color: rgb(108, 108, 108);
+    font-weight: 700;
+    font-family: sans-serif;
+    margin-left: 10px;
+}
+.flexer{
+        display: flex;}
+        @media (max-width: 767px){
+       body{
+        width: fit-content;
+        right: 0px;
+        
+       }
+       .can{
+        position: initial;
+        margin-left: 50%;
+       }
+       .cannn{
+        margin-left: 120%;
+        top: 1700px;
+        width: 100%;
+    
+        
+       }
+       .butto{
+        margin-left: 0px;
+       }
+       .rim{
+        font-size: 40px;
+       
+       }
+       .ima{
+        margin-left: 0px;
+       }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="jam">
+        <nav class="navbar navbar-expand-lg dim">
+            <div class="container-fluid jam">
+                <img class="logo "
+                    src="https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_RGB_White.png" alt="">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active text-white me-3 " aria-current="page" href="#">
+                                <h6 class="gre">Location</h6>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white me-3 " href="#">
+                                <h6 class="gre">Being Here</h6>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white me-3 " href="#">
+                                <h6 class="gre">Diversity, Equity & Impact</h6>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white me-3 " href="#">
+                                <h6 class="gre">Students</h6>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white me-3 " href="#">
+                                <h6 class="gre">How we Hire</h6>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white me-3 " href="#">
+                                <h6 class="gre how">All Jobs</h6>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="mab">
+        <p class="join"> <b>34</b> jobs in <b>4</b> locations</p>
+        <p class="band">Join the band</p>
+        <button class="btn btn-outline dark"> Explore all jobs</button>
+    </div>
+
+    <marquee class="marqueee" width="60%" direction="up" height="300px" scrollamount="2">
+        <div class="one">
+            <p class="NEW">New York</p>
+            <p class="run">Summer Internship, <br> Machine Learning Engineer | Advertising R&D (US)</p>
+        </div>
+        <div class="two">
+            <p class="NEW">New York</p>
+            <p class="run">Summer Internship, <br> Product Marketing MBA | Music Mission (US)</p>
+        </div>
+        <div class="one">
+            <p class="NEW">New York</p>
+            <p class="run">Summer Internship, <br> Machine Learning Engineer | Advertising R&D (US)</p>
+        </div>
+        <div class="two">
+            <p class="NEW">New York</p>
+            <p class="run">Summer Internship, <br> Product Marketing MBA | Music Mission (US)</p>
+        </div>
+    </marquee>
+    <div class="kim"><i class="fa-solid fa-magnifying-glass icon"></i><input class="tip" type="text"
+            placeholder=" Search Jobs and Keywords"><i class="fa-solid fa-circle-arrow-right icon"></i></div>
+    <div class="body">
+        <img class="image" src="../../Desktop/Start_Mobile-new.jpg" alt="">
+    </div>
+    <div class="row  can">
+
+        <div class="flexer">
+            <h2>
+                <div class="number">1</div>
+            </h2>
+            <h1>who we are</h1>
+        </div>
+        <div class="col-md py-3 ima"> <img class="sit "
+                src="https://www.lifeatspotify.com/images/470x500/WhoWeAre-940.jpg" alt=""></div>
+        <div class="col-md py-3 text">
+            <h3 class="onee">One band, no solo artists</h3>
+            <p class="rim">It’s our culture. It’s our values. It’s who we are and what we’re not. It’s why we do things
+                the way we do and why that matters.</p>
+            <button class="btn btn-outline dark"> Read our manifesto</button>
+        </div>
+    </div>
+    <div class="row cann">
+
+        <div class="flexer">
+            <h2>
+                <div class="number">2</div>
+            </h2>
+            <h1>what we do</h1>
+        </div>
+        <div class="col-md py-3 ima"> <img class="sit "
+                src="https://www.lifeatspotify.com/images/470x500/WhereWeBelong-940.jpg" alt=""></div>
+        <div class="col-md py-3 text">
+            <h3 class="onee">We all have parts to play</h3>
+            <p class="rim">We want you to feel like you belong here and can thrive here. No two creators or listeners
+                are the same, so neither are we.</p>
+            <button class="btn btn-outline dark">learn about belonging</button>
+        </div>
+    </div>
+    <div class="row cannn">
+
+        <div class="flexer">
+            <h2>
+                <div class="number">3</div>
+            </h2>
+            <h1>How we act</h1>
+        </div>
+        <div class="col-md py-3 ima"> <img class="sit "
+                src="https://www.lifeatspotify.com/images/470x500/HowWeAct-940.jpg" alt=""></div>
+        <div class="col-md py-3 text">
+            <h3 class="onee">Listening and learning</h3>
+            <p class="rim">We’re not just shaping the future of audio. We want to help shape a better future for society
+                and the planet too. Bit by bit. Day by day.</p>
+            <button class="btn btn-outline dark">see our approach</button>
+        </div>
+    </div>
+    <div class="pet">
+        <h1 class="move">Featured jobs</h1>
+        <div id="carouselExample" class="carousel slide caro">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+
+                    <div class="slide1">
+                        <p class="tep">Students</p>
+                        <p class="tea">Summer Internship
+                            Backend Engineer | Advertising R&D (US)</p>
+                        <p class="tep">New York</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="slide1">
+                        <p class="tep">Students</p>
+                        <p class="tea">Summer Internship
+                            Backend Engineer | Advertising R&D (US)</p>
+                        <p class="tep">New York</p>
+                    </div>
+                </div>
+                <div class="carousel-item active">
+                    <div class="slide1">
+                        <p class="tep">Students</p>
+                        <p class="tea">Summer Internship
+                            Backend Engineer | Advertising R&D (US)</p>
+                        <p class="tep">New York</p>
+
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev mar" type="button" data-bs-target="#carouselExample"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next mar" type="button" data-bs-target="#carouselExample"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <div class="can5">
+        <h2 class="he1">Here, there, everywhere</h2>
+        <p class="he2">Audio is global, so we are too. Wherever in the world you’re looking for a new role, chances are,
+            we’re there.</p>
+        <div class="jay"><button class="btn btn-outline dark">see all locationa</button></div>
+    </div>
+
+  
+    <marquee width="100%" direction="left" height="100px">
+        <div class="flexer">
+            <img class="jop" src="https://www.lifeatspotify.com/images/120x120/rio-de-janeiro-240.webp" alt="">
+            <p class="coun">
+                Rio de Janeiro
+                <img class="jop" src="https://www.lifeatspotify.com/images/120x120/sao-paulo-240.webp" alt=""> São Paul0
+                <img class="jop" src="https://www.lifeatspotify.com/images/120x120/sydney-240.webp" alt=""> Toronto
+            </p>
+        </marquee>
+        <br>
+        <marquee width="100%" direction="right" height="100px">
+            <div class="flexer">
+                <img class="jop" src="https://www.lifeatspotify.com/images/120x120/rio-de-janeiro-240.webp" alt="">
+                <p class="coun">
+                    Rio de Janeiro
+                    <img class="jop" src="https://www.lifeatspotify.com/images/120x120/sao-paulo-240.webp" alt=""> São Paul0
+                    <img class="jop" src="https://www.lifeatspotify.com/images/120x120/sydney-240.webp" alt=""> Toronto
+                </p>
+            </marquee>
+            <br>
+            <marquee width="100%" direction="left" height="100px" scrollamount="4">
+                <div class="flexer"> <img class="jop" src="https://www.lifeatspotify.com/images/120x120/sao-paulo-240.webp" alt=""> <p class="coun">São Paul0
+                    <img class="jop" src="https://www.lifeatspotify.com/images/120x120/rio-de-janeiro-240.webp" alt="">
+                   
+                        Rio de Janeiro
+                       
+                        <img class="jop" src="https://www.lifeatspotify.com/images/120x120/sydney-240.webp" alt=""> Toronto
+                    </p>
+                </marquee>
+                <marquee width="100%" direction="right" height="100px"scrollamount="4">
+                    <div class="flexer">
+                        <img class="jop" src="https://www.lifeatspotify.com/images/120x120/rio-de-janeiro-240.webp" alt="">
+                        <p class="coun">
+                            Rio de Janeiro
+                            <img class="jop" src="https://www.lifeatspotify.com/images/120x120/sao-paulo-240.webp" alt=""> São Paul0
+                            <img class="jop" src="https://www.lifeatspotify.com/images/120x120/sydney-240.webp" alt=""> Toronto
+                        </p>
+                    </marquee>
+                <div class="pett">
+                    <h1 class="movee">Fresh content</h1>
+                    <div id="carouselExample" class="carousel slide caro">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+            
+                                <div class="slide2">
+                                    <p class="tep">Students</p>
+                                    <p class="tea">Summer Internship
+                                        Backend Engineer | Advertising R&D (US)</p>
+                                    <p class="tep">New York</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="slide2">
+                                    <p class="tep">Students</p>
+                                    <p class="tea">Summer Internship
+                                        Backend Engineer | Advertising R&D (US)</p>
+                                    <p class="tep">New York</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item active">
+                                <div class="slide2">
+                                    <p class="tep">Students</p>
+                                    <p class="tea">Summer Internship
+                                        Backend Engineer | Advertising R&D (US)</p>
+                                    <p class="tep">New York</p>
+            
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev mar" type="button" data-bs-target="#carouselExample"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next mar" type="button" data-bs-target="#carouselExample"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="kimm flexer"><h2 class="play">Discover more about our categories
+
+
+                </h2><i class="fa-solid fa-circle-arrow-right iconn"></i></div>
+                <div class="kimmm flexer"><h2 class="play">Discover more about our categories
+
+
+                </h2><i class="fa-solid fa-circle-arrow-right iconn"></i></div>
+                <div class="kimmmm flexer"><h2 class="play">Discover more about our categories
+
+
+                </h2><i class="fa-solid fa-circle-arrow-right iconn"></i></div>
+                <div class="deep">
+                    <div class="can6">
+                        <img class="jop jap" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIwIiBoZWlnaHQ9IjEyMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNNjAgMTBhMjguNjUgMjguNjUgMCAwMC0yOC43IDI4LjY0djUwLjQyaDU3LjI5VjM4LjY0QTI4LjY0IDI4LjY0IDAgMDA2MCAxMHoiIGZpbGw9IiNGRjQ2MzIiLz48cGF0aCBkPSJNNDAuMjggODlWMzguNjRhMTkuNjcgMTkuNjcgMCAwMTM5LjM0IDBWODlINDAuMjh6IiBmaWxsPSIjMkQ0NkI5Ii8+PHBhdGggZD0iTTkyIDg5LjA2SDI3Ljg5djEyLjY5SDkyVjg5LjA2eiIgZmlsbD0iI2ZmZiIvPjxwYXRoIGQ9Ik05My44MiA5Ny45OUgyNi4wN1YxMTBoNjcuNzVWOTcuOTl6IiBmaWxsPSIjMkQ0NkI5Ii8+PHBhdGggZD0iTTQwLjI4IDM3LjU3djE2LjY3Yy42Ni4xMTQgMS4zMy4xNzQgMiAuMThhMTMuMTYgMTMuMTYgMCAwMDEzLjE5LTEzLjE2IDEyLjkgMTIuOSAwIDAwLTEyLjE2LTEzLjExIDE3LjggMTcuOCAwIDAwLTMuMDMgOS40MnpNODIuMyA3OC4xM2M0LjE3LjMyIDcuNjYtMS4yNyAxMi0yIDQtLjcyIDguMTUgMCAxMi4yMy0uMTNhNi44IDYuOCAwIDAwMy4yNS0uNjIgMS45MzUgMS45MzUgMCAwMDEtMS4zMyAyLjE0OCAyLjE0OCAwIDAwLTEuNTktMi4wNmMtLjg4LS4zMS0xLjg0LS4zMS0yLjc1LS41Ni00LjQ3LTEuMjItMy4zOS02LTQuMTgtOS4zOWE3Ljc4MyA3Ljc4MyAwIDAwLTYuODctNS42MiAxMC42MSAxMC42MSAwIDAwLTguMzkgMy41Yy0xIDEuMDktMS44MSAyLjM0LTIuODYgMy4zOWE2LjcxIDYuNzEgMCAwMS00LjE4IDIuMDZjLTEuOCAwLTMuMzQtMS4yOC01LjIyLS44OC0yLjE0LjQ1LTMuNTEgMi4yMi01IDMuNjNBOS4zMzggOS4zMzggMCAwMTY3IDY5Ljg5Yy0xIC40My0yLjQxLjc1LTMuMDggMS42N0ExLjgyIDEuODIgMCAwMDY0IDc0Yy43NC41NyAyLjM0LjU5IDMuMjUuNThhMjkuMDA2IDI5LjAwNiAwIDAxNC4zNy4wN2MzIC40MyA1LjM0IDIuMzcgOC4yNyAzLjExLjc5MS4xOTIgMS41OTcuMzE2IDIuNDEuMzd6TTk4LjA2IDI4LjI0YTM2Ljg4IDM2Ljg4IDAgMDEtMy42NiA4LjE5IDQwLjI1NiA0MC4yNTYgMCAwMS01LjQgNy4xNCAzMy4xNiAzMy4xNiAwIDAxLTcgNS42MSAyMy42MiAyMy42MiAwIDAxLTguNDIgMy4wOC4xNS4xNSAwIDAxLS4xNy0uMTMuMTUuMTUgMCAwMS4xMi0uMTcgMjUuNCAyNS40IDAgMDA4LjEzLTMuMzRBMzUuMTU2IDM1LjE1NiAwIDAwODguMzggNDNhNDIuNTggNDIuNTggMCAwMDUuNDEtNyA0NC42NzIgNDQuNjcyIDAgMDA0LTcuOS4xNS4xNSAwIDAxLjE5LS4wOS4xNC4xNCAwIDAxLjA4LjIzek04My42OCA1Mi43NmEyMC44NjQgMjAuODY0IDAgMDA0LjA3LS45MiAyOC43NjMgMjguNzYzIDAgMDAzLjg2LTEuNTljMS4yNi0uNjEgMi40Ni0xLjMzIDMuNjgtMkw5OC45MSA0NmEuMTYuMTYgMCAwMS4yMSAwIC4xNi4xNiAwIDAxMCAuMmMtMS4xMS44OC0yLjI2IDEuNzEtMy40NCAyLjVBMzMuOTAzIDMzLjkwMyAwID
+                        AxOTIgNTFjLTEuMjgxLjY1LTIuNjIgMS4xOC00IDEuNTgtMS4zOS4zODEtMi44MjkuNTYtNC4yNy41M2EuMTQuMTQgMCAwMS0uMTQtLjE2LjE1LjE1IDAgMDEuMDktLjE5eiIgZmlsbD0iI2ZmZiIvPjwvc3ZnPg==" alt="">
+                        <h2 class="he3">Sound good?</h2>
+                        <p class="he4">Get to know our hiring process before you apply or find answers to any lingering questions, right here, right now.</p>
+                        <div class="jayy flexer"><button class="btn btn-outline darkk">see all locationa</button> <button class="btn btn-outline darkk">see all locationa</button></div>
+                    </div>
+            </div>
+            <div class="black">
+                <div class=" flexer">
+                    <div class=""><img class="spot"
+                            src="https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_RGB_White.png" alt="">
+                    </div>
+                    <div class="hit">
+                        <p class="shesh">COMPANY</p>
+                        <p class="about">About</p>
+                        <p class="about">Jobs</p>
+                    </div>
+                    <div class="hit">
+                        <p class="shesh">COMMUNITIES</p>
+                        <p class="about">For Artists</p>
+                        <p class="about">Developers</p>
+                        <p class="about">Investore</p>
+                        <p class="about">Advertising</p>
+                        <p class="about">Vendors</p>
+                    </div>
+                    <div class="hit">
+                        <p class="shesh">USEFUL LINKS</p>
+                        <p class="about">Support</p>
+                        <p class="about">Web</p>
+                    </div>
+                    <div class="muffinmar"><i class="fa-brands fa-square-instagram gra"></i></div>
+                    <div class="muffin"><i class="fa-brands fa-square-facebook gra"></i></div>
+                    <div class="muffin"><i class="fa-brands fa-square-twitter gra"></i></div>
+                    <button class="butto">Get Spotify</button>
+                </div>
+        
+            </div>
+            
+</body>
+
+</html>
+<script src="https://kit.fontawesome.com/4b478d8f1c.js" crossorigin="anonymous"></script>
+<script src="../bootstrap-5.3.0-alpha1-dist/js/bootstrap.bundle.js"></script>

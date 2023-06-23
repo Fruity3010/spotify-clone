@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+    <title>Document</title>
+    <style>
+        .logo {
+            width: 60%;
+            padding: 10px 10px 0px 10px 20px;
+        }
+
+        .side {
+            width: 20%;
+
+            background-color: black;
+            position: fixed;
+            bottom: 0;
+            top: 0;
+        }
+
+        .hi {
+
+            padding-top: 15%;
+        }
+
+        .icon {
+            font-size: 20px;
+            margin-left: 10%;
+            color: rgba(255, 255, 255, 0.495);
+        }
+        .iconn{
+            font-size: 35px;
+            margin-left: 10%;
+            color: rgba(255, 255, 255, 0.495);
+        }
+
+        .home {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 700;
+            color: white;
+            margin-left: 5%;
+            font-size: 12px;
+        }
+
+        .hii {
+            padding-top: 8%;
+        }
+
+        .legal {
+            display: flex;
+            margin-top: 10%;
+        }
+
+        .tiny {
+            font-size: 11px;
+            font-weight: 500;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            margin-right: 20px;
+        }
+
+        .big {
+            background-color: rgb(20, 20, 20);
+           
+            display: flex;
+        }
+
+        .dim {
+            margin-top: 50%;
+            margin-left: 20%;
+        }
+
+        .new {
+            margin-left: 20%;
+            display: inline-block;
+            background-color: rgb(3, 17, 38);
+            height: 60px;
+            width: 80%;
+            padding: 10px;
+            position: fixed;
+            z-index: 2;
+        }
+
+       .vam{
+        font-size: 20px;
+        color: rgba(255, 255, 255, 0.616);
+        margin-left: 5px;
+       }
+
+
+        .nam {
+            list-style: none;
+            display: inline-flex;
+        }
+
+        .firstli {
+            margin-right: 620px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .secondli {
+            font-size: 17px;
+            font-weight: 600;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            margin-right: 30px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .user {
+            width: 250px;
+            margin-top: 10px;
+            font-size: 14px;
+            background-color: rgb(0, 0, 0);
+            color: white;
+            border-radius: 50px;
+            padding: 5px;
+
+        }
+
+        .useri {
+            font-size: 20px;
+            color: white;
+            margin-right: 10px;
+
+        }
+
+        .userid {
+            color: white;
+            margin-right: 10px;
+        }
+
+        .account {
+            background-color: rgb(20, 20, 20);
+            margin-top: 5px;
+            width: 160px;
+            padding: 5px;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-left: 50px;
+            display: none;
+            position: absolute;
+        }
+
+        .list {
+            list-style: none;
+            font-size: 14px;
+            font-weight: 400;
+            color: white;
+        }
+
+        .user:focus-within+.account {
+            display: block;
+        }
+
+        .take {
+            padding: 10px;
+        }
+.upload{
+    font-size: 15px;
+    color: white;
+    margin-left: 30px;
+}
+        .take:hover {
+            background-color: rgb(62,62, 62);
+        }
+        .budd{
+            margin-left: 20%;
+            margin-top: 4%;
+            padding-top: 10px;
+            color: white;
+        }
+        .topicons{
+            display: flex;
+            margin-right: 190%;
+        }
+        .him{
+            background-color: rgb(17, 13, 5);
+            width: 30px;
+            padding-top: 3px;
+            border-radius: 90px;
+            height: 30px;
+            margin-left: 3px;
+            margin-top: 12px;
+        }
+        .cover{
+            width: 180px;
+            border-radius: 10px;
+            height: 170px;
+        }
+        .playli{
+            margin-left: 30px;
+            padding: 20px;
+            background-color: rgb(23,23,23);
+            width: fit-content;
+            position: relative;
+            height: 290px;
+            border-radius: 20px;
+            
+        }
+        .playli:hover{
+            background-color: rgb(40, 40, 40);
+        }
+        .dim{
+            font-size: 40px;
+            color: rgb(30, 215, 96);
+            position: absolute;
+            bottom: 100px;
+            left: 100px;
+            visibility: hidden;
+        }
+        .cover:hover+.dim{
+visibility: visible;
+        }
+        .bots{
+            width: 100%;
+        }
+        .tim{
+            margin-top: 10px;
+            font-size: 16px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 700;
+        }
+        .jim{
+            font-size: 12px;
+            font-weight: 400;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .tops{
+            font-size: 32px;
+            font-weight: 700;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-left: 10px;
+        }
+        .eight{
+            background-color: rgb(18, 18, 18);
+        
+        }
+        .black{
+            background-color: black;
+            margin-left: 20%;
+            padding-top: 50px;
+        }
+        .gra{
+            font-size: 40px;
+        }
+        .gra:hover{
+            color: rgb(30, 215, 96);
+        }
+        .muffin{
+            border-radius: 100%;
+            margin-right: 10px;
+        }
+        .muffinmar{
+            border-radius: 100%;
+            margin-right: 10px;
+            margin-left: 400px;
+        }
+        .butto{
+            width: 180px;
+            background-color: rgb(30, 215, 96);
+            height: 50px;
+            border-radius: 30px;
+          color: black;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            font-weight: 700;
+            position: absolute;
+            margin-top: 50px;
+            margin-left: 940px;
+        }
+        .butto:hover{
+            background-color: rgb(255, 255, 255);
+          
+        }
+        .flexer{
+            display: flex;
+        }
+        .spot{
+            width: 130px;
+        }
+        .about{
+            font-weight: 700;
+            font-family: sans-serif;  
+            margin-left: 10px;
+            color: white;
+            font-size: 16px;
+        }
+        .about:hover{
+color: rgb(30, 215, 96);
+        }
+        .hit{
+            margin-top: 10px;
+            width: 100px;
+            margin-left: 30px;
+        }
+.rag{
+    text-decoration: none;
+    color: white;
+}
+.rag:hover{
+    color: rgb(30, 215, 96);
+}
+@media (max-width: 767px){
+   
+    .bots{
+            width: fit-content;
+            margin-left: 150px;
+        }
+        .new{
+          width: fit-content;
+          top: 0;
+        }
+        .topicons{
+            display: flex;
+            margin-right: 20%;
+        }
+        .muffinmar{
+            display: none;
+        }
+        .muffin{
+            display: none;
+        }
+        .tops{
+            margin-left: 60px;
+        }
+        .body{
+            background-color: black;
+        }
+        .budd{
+            margin-left: 100px;
+        }
+        .new{
+            margin-left: 100px;
+        }
+        .playli{
+            margin-left: 0px;
+        }
+        .shesh{
+            color: white;
+        }
+}
+    </style>
+</head>
+
+<body class="body">
+    <main class="big">
+        <div class="side">
+            <img class="logo" src="https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_RGB_White.png"
+                alt="">
+            <div class="hi"><i class="fa-solid fa-house icon"></i><span class="home">Home</span></div>
+            <div class="hii"><i class="fa-solid fa-magnifying-glass icon"></i><span class="home">Search</span></div>
+            <div class="hii"><i class="fa-solid fa-book icon"></i><span class="home">Library</span></div>
+            <div class="hi"><i class="fa-solid fa-plus icon"></i><span class="home">Add</span></div>
+            <div class="hii"><i class="fa-solid fa-book icon"></i><span class="home">Library</span></div>
+            <div class="dim">
+                <div class="legal">
+                    <span class="tiny">Legal</span><span class="tiny">Privacy</span>
+                </div>
+                <div class="legal">
+                    <span class="tiny">Legal</span><span class="tiny">Privacy</span>
+                </div>
+
+            </div>
+        </div>
+        <div class="new ">
+            <ul class="nam">
+                <div class="topicons">
+
+               <div class="him"><i class="fa-solid fa-chevron-left vam"></i></div>
+               <div class="him"><i class="fa-solid fa-chevron-right vam"></i></div>
+            </div>
+                <li>
+                    <div class="click">
+                        <button class="user"><i class="fa-solid fa-user useri"></i> Campbell david comfort <i
+                                class="fa-solid fa-arrow-down userid"></i></button>
+                        <div class="account">
+                            <div class="list">
+                                <p class="take"><a href="spotifyacct.html"> Account <i class="fa-solid fa-arrow-up-from-bracket upload"></i></a></p>
+                                <p class="take">Profile </p>
+                                <p class="take">Support <i class="fa-solid fa-arrow-up-from-bracket upload"></i></p>
+                                <p class="take">Download <i class="fa-solid fa-arrow-up-from-bracket upload"></i></p>
+                                <p class="take">Setting</p>
+                                <p class="take">Log out</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </main>
+    <section class="eight">
+    <div class="budd">
+        <h3 class="tops">Good morning</h3>
+        <div class="row bots">
+            <div class="col-md playli">
+                <img class="cover" src="https://i.scdn.co/image/ab67706f000000025ea954b9436a413de3d94c25" alt="">
+                <i class="fa-solid fa-circle-play dim"></i>
+                <p class="tim">Asake Radio</p>
+                <p class="jim">by Spotify</p>
+            </div>
+            <div class="col-md playli">
+                <img class="cover" src="https://i.scdn.co/image/ab67706f000000027dc2a0fb4bfe0d07294f685e" alt="">
+                <i class="fa-solid fa-circle-play dim"></i>
+                <p class="tim">Asake Radio</p>
+                <p class="jim">by Spotify</p>
+            </div>
+            <div class="col-md playli">
+                <img class="cover" src="https://i.scdn.co/image/ab67706f000000023df638bf5c33922ceb4c185a" alt="">
+                <i class="fa-solid fa-circle-play dim"></i>
+                <p class="tim">Asake Radio</p>
+                <p class="jim">by Spotify</p>
+            </div>
+            <div class="col-md playli">
+                <img class="cover" src="https://www.listenspotify.com/uploaded_files/Thf_1587508559.png" alt="">
+                <i class="fa-solid fa-circle-play dim"></i>
+                <p class="tim">Asake Radio</p>
+                <p class="jim">by Spotify</p>
+            </div>
+        </div>
+    </div>
+    <div class="budd">
+        <h3 class="tops">Vibes</h3>
+        <div class="row bots">
+            <div class="col-md playli">
+                <img class="cover" src="https://static.qobuz.com/images/covers/hc/zj/hb162gu8yzjhc_600.jpg" alt="">
+                <i class="fa-solid fa-circle-play dim"></i>
+                <p class="tim">Asake Radio</p>
+                <p class="jim">by Spotify</p>
+            </div>
+            <div class="col-md playli">
+                <img class="cover" src="https://i.scdn.co/image/ab67616d0000b2737089ec597e6a74fd18049898" alt="">
+                <i class="fa-solid fa-circle-play dim"></i>
+                <p class="tim">Asake Radio</p>
+                <p class="jim">by Spotify</p>
+            </div>
+            <div class="col-md playli">
+                <img class="cover" src="https://i.scdn.co/image/ab67616d0000b273179cff67ce19677b5b9250dd" alt="">
+                <i class="fa-solid fa-circle-play dim"></i>
+                <p class="tim">Asake Radio</p>
+                <p class="jim">by Spotify</p>
+            </div>
+            <div class="col-md playli">
+                <img class="cover" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIqW9D_uPcXf9Htd4j5O_nWx4D7WuwaVLJew&usqp=CAU" alt="">
+                <i class="fa-solid fa-circle-play dim"></i>
+                <p class="tim">Asake Radio</p>
+                <p class="jim">by Spotify</p>
+            </div>
+        </div>
+    </div>
+    <div class="budd">
+        <h3 class="tops">On the Road</h3>
+        <div class="row bots">
+            <div class="col-md playli">
+                <img class="cover" src="data:image/jpeg;base64,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
+                qZRYFyVAKrKJRYF5RKqChFgWlEqkolFgXlFpUlEosBlpCXKEWBCEIUgEolCEAEoQhAAhCEACEIQAIQhAAhCEACEIQAIQhAAhCEACEIQAIlCEACEIQAIQhAAhCEACEIQAIQhAAhCEACEIQAIQhAAhCEACEIQAIQhAAhCEACEIQAIQhAAhCEACEIQAIQhAAhCEAf/2Q==" alt="">
+                <i class="fa-solid fa-circle-play dim"></i>
+                <p class="tim">Asake Radio</p>
+                <p class="jim">by Spotify</p>
+            </div>
+            <div class="col-md playli">
+                <img class="cover" src="https://i1.sndcdn.com/artworks-000514256523-vd666x-t500x500.jpg" alt="">
+                <i class="fa-solid fa-circle-play dim"></i>
+                <p class="tim">Asake Radio</p>
+                <p class="jim">by Spotify</p>
+            </div>
+            <div class="col-md playli">
+                <img class="cover" src="https://i.scdn.co/image/ab67616d0000b273a7fc5a29c23db6f8e103b019" alt="">
+                <i class="fa-solid fa-circle-play dim"></i>
+                <p class="tim">Asake Radio</p>
+                <p class="jim">by Spotify</p>
+            </div>
+            <div class="col-md playli">
+                <img class="cover" src="https://data.whicdn.com/images/339136459/original.jpg?t=1578320802" alt="">
+                <i class="fa-solid fa-circle-play dim"></i>
+                <p class="tim">Asake Radio</p>
+                <p class="jim">by Spotify</p>
+            </div>
+        </div>
+    </div>
+    <div class="budd">
+        <h3 class="tops">Chill mix</h3>
+        <div class="row bots">
+            <div class="col-md playli">
+                <img class="cover" src="https://data.whicdn.com/images/342976697/original.jpg" alt="">
+                <i class="fa-solid fa-circle-play dim"></i>
+                <p class="tim">Asake Radio</p>
+                <p class="jim">by Spotify</p>
+            </div>
+            <div class="col-md playli">
+                <img class="cover" src="https://w0.peakpx.com/wallpaper/798/629/HD-wallpaper-vaporwave-city-aesthetic-chill-lofi-night-sunset-tokyo-vibes.jpg" alt="">
+                <i class="fa-solid fa-circle-play dim"></i>
+                <p class="tim">Asake Radio</p>
+                <p class="jim">by Spotify</p>
+            </div>
+            <div class="col-md playli">
+                <img class="cover" src="https://source.boomplaymusic.com/group10/M00/02/24/3bff183d32cc41bcb32f60c807388720_464_464.jpg" alt="">
+                <i class="fa-solid fa-circle-play dim"></i>
+                <p class="tim">Asake Radio</p>
+                <p class="jim">by Spotify</p>
+            </div>
+            <div class="col-md playli">
+                <img class="cover" src="https://i.pinimg.com/736x/2e/47/3a/2e473a84774c547496665aeec1805e33.jpg" alt="">
+                <i class="fa-solid fa-circle-play dim"></i>
+                <p class="tim">Asake Radio</p>
+                <p class="jim">by Spotify</p>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="black col-sm-6">
+    <div class=".col-sm-6 flexer">
+        <div class=""><img class="spot" src="https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_RGB_White.png" alt=""></div>
+        <div class="hit"><p class="shesh">COMPANY</p>
+            <p class="about">About</p>
+            <p class="about">Jobs</p>
+        </div>
+        <div class="hit"><p class="shesh">COMMUNITIES</p>
+            <p class="about">For Artists</p>
+            <p class="about">Developers</p>
+            <p class="about"><a class="rag" href="spotifyinvest.html">Investors</a> </p>
+            <p class="about">Advertising</p>
+            <p class="about">Vendors</p>
+        </div>
+        <div class="hit"><p class="shesh">USEFUL LINKS</p>
+            <p class="about">Support</p>
+            <p class="about">Web</p>
+            <p class="about"><a class="rag" href="spotifyacct.html">Account</a></p>
+        </div>
+       <div class="muffinmar"><i class="fa-brands fa-square-instagram gra"></i></div>
+       <div class="muffin"><i class="fa-brands fa-square-facebook gra"></i></div>
+       <div class="muffin"><i class="fa-brands fa-square-twitter gra"></i></div>
+    </div>
+   
+</div>
+</body>
+
+</html>
+<script src="https://kit.fontawesome.com/4b478d8f1c.js" crossorigin="anonymous"></script>
